@@ -23,22 +23,8 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1O-8C-dxR" customClass="FSCalendar">
                                         <rect key="frame" x="10" y="0.0" width="355" height="280"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9i-TX-3Ul">
-                                                <rect key="frame" x="54" y="12" width="64" height="22"/>
-                                                <state key="normal" title="Button" image="prev"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgU-Ll-vQg">
-                                                <rect key="frame" x="281" y="12" width="64" height="22"/>
-                                                <state key="normal" title="Button" image="next"/>
-                                            </button>
-                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="S9i-TX-3Ul" firstAttribute="leading" secondItem="K1O-8C-dxR" secondAttribute="leading" constant="54" id="AbM-BU-EfU"/>
-                                            <constraint firstAttribute="trailing" secondItem="vgU-Ll-vQg" secondAttribute="trailing" constant="10" id="CB5-jN-m4L"/>
-                                            <constraint firstItem="S9i-TX-3Ul" firstAttribute="top" secondItem="K1O-8C-dxR" secondAttribute="top" constant="12" id="bkZ-li-s1s"/>
-                                            <constraint firstItem="vgU-Ll-vQg" firstAttribute="top" secondItem="K1O-8C-dxR" secondAttribute="top" constant="12" id="sBw-8m-K8C"/>
                                             <constraint firstAttribute="height" constant="280" id="sQS-x5-Pic" userLabel="Calendar Height Constraint"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -73,12 +59,30 @@
                                             <outlet property="delegate" destination="Fsb-Hq-FAI" id="W9X-Q9-aNU"/>
                                         </connections>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9i-TX-3Ul">
+                                        <rect key="frame" x="60" y="10" width="10" height="22"/>
+                                        <state key="normal" image="prev"/>
+                                        <connections>
+                                            <action selector="prevButton:" destination="Fsb-Hq-FAI" eventType="touchUpInside" id="Fqn-l6-lUw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgU-Ll-vQg">
+                                        <rect key="frame" x="305" y="10" width="10" height="22"/>
+                                        <state key="normal" image="next"/>
+                                        <connections>
+                                            <action selector="nextButton:" destination="Fsb-Hq-FAI" eventType="touchUpInside" id="oET-HC-aMA"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="S9i-TX-3Ul" firstAttribute="top" secondItem="qS9-3D-EvQ" secondAttribute="top" constant="10" id="4fs-0Q-RSq"/>
                                     <constraint firstAttribute="trailing" secondItem="K1O-8C-dxR" secondAttribute="trailing" constant="10" id="Aj1-st-zcF"/>
                                     <constraint firstItem="K1O-8C-dxR" firstAttribute="leading" secondItem="qS9-3D-EvQ" secondAttribute="leading" constant="10" id="Doc-zX-wA1"/>
                                     <constraint firstItem="K1O-8C-dxR" firstAttribute="top" secondItem="qS9-3D-EvQ" secondAttribute="top" id="Hrb-Ik-AlS"/>
+                                    <constraint firstAttribute="trailing" secondItem="vgU-Ll-vQg" secondAttribute="trailing" constant="60" id="Mqb-cO-Mq0"/>
+                                    <constraint firstItem="vgU-Ll-vQg" firstAttribute="top" secondItem="qS9-3D-EvQ" secondAttribute="top" constant="10" id="Pnq-JB-DPz"/>
+                                    <constraint firstItem="S9i-TX-3Ul" firstAttribute="leading" secondItem="qS9-3D-EvQ" secondAttribute="leading" constant="60" id="ZWa-m4-EP5"/>
                                     <constraint firstAttribute="height" constant="280" id="wG9-op-7yn"/>
                                 </constraints>
                             </view>

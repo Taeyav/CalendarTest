@@ -12,8 +12,14 @@ class InterfaceBuilderViewController: UIViewController, UITableViewDataSource, U
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var calendar: FSCalendar!
-
+   
     @IBOutlet weak var calendarHeightConstraint: NSLayoutConstraint!
+    
+    fileprivate lazy var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd"
+        return formatter
+    }()
     
     var dataSource = [[String:String]()]
    
@@ -34,6 +40,7 @@ class InterfaceBuilderViewController: UIViewController, UITableViewDataSource, U
         let scopeGesture = UIPanGestureRecognizer(target: self.calendar, action: #selector(self.calendar.handleScopeGesture(_:)))
         self.calendar.addGestureRecognizer(scopeGesture)
         
+        
         //注册cell
         let cellNib = UINib(nibName: "DairyTableViewCell", bundle: nil)
         //设置重用ID
@@ -48,6 +55,27 @@ class InterfaceBuilderViewController: UIViewController, UITableViewDataSource, U
             ["Day":"25","YearAndMonth":"2018年12月","DairyTitle":"圣诞节啦啦啦啦","DairyContent":"MerryChristmas!"],
             ["Day":"13","YearAndMonth":"2018年11月","DairyTitle":"不知道嘻嘻嘻","DairyContent":"随便写写......hahhahahahhhhiwhid"],
             ["Day":"06","YearAndMonth":"2018年10月","DairyTitle":"演唱会快乐","DairyContent":"太开心辽"]]
+    }
+    
+    
+    @IBAction func prevButton(_ sender: UIButton) {
+        calendar.setCurrentPage(getPreviousMonth(date: calendar.currentPage), animated: true)
+        print(calendar.currentPage)
+        print("\(Calendar.current)")
+    }
+    
+    @IBAction func nextButton(_ sender: UIButton) {
+        calendar.setCurrentPage(getNextMonth(date: calendar.currentPage), animated: true)
+        print(calendar.currentPage)
+        print("\(Calendar.current)")
+    }
+   
+    func getPreviousMonth(date:Date)->Date{
+        return  Calendar.current.date(byAdding: .month, value: -1, to:date)!
+    }
+    
+    func getNextMonth(date:Date)->Date{
+        return  Calendar.current.date(byAdding: .month, value: 1, to:date)!
     }
     
     override func didReceiveMemoryWarning() {
@@ -79,4 +107,30 @@ class InterfaceBuilderViewController: UIViewController, UITableViewDataSource, U
         return cell
     }
 }
-
+//
+//extension NSDate {
+//    func getNextDate() ->NSDate {
+//        let calendar = NSCalendar.current
+//        let com = calendar.components([.Year,.Month,.Day], fromDate:self)
+//        com.month += 1
+//        com.day = 1
+//        if com.month == NSDate().getMonth() {
+//            com.day = NSDate().getDay()
+//        }
+//        return calendar.dateFromComponents(com)!
+//
+//    }
+//    func getLastDate() ->NSDate {
+//        let calendar = NSCalendar.current
+//        let com = calendar.components([.Year,.Month,.Day], fromDate:self)
+//        com.month -= 1
+//        com.day = 1
+//        if com.month == NSDate().getMonth() {
+//            com.day = NSDate().getDay()
+//
+//        }
+//        return calendar.dateFromComponents(com)!
+//
+//    }
+//
+//}
