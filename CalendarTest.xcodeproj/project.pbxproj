@@ -16,6 +16,8 @@
 		0F202C2021ECA9C600D7B07B /* CalendarTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F202C1F21ECA9C600D7B07B /* CalendarTestTests.swift */; };
 		0F202C2B21ECA9C600D7B07B /* CalendarTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F202C2A21ECA9C600D7B07B /* CalendarTestUITests.swift */; };
 		0F202C3C21ECB93900D7B07B /* InterfaceBuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F202C3B21ECB93900D7B07B /* InterfaceBuilderViewController.swift */; };
+		0F51C2A221EE38530035FACC /* DairyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F51C2A021EE38530035FACC /* DairyTableViewCell.swift */; };
+		0F51C2A321EE38530035FACC /* DairyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F51C2A121EE38530035FACC /* DairyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		0F202C3821ECAA9B00D7B07B /* CalendarTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CalendarTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		0F202C3B21ECB93900D7B07B /* InterfaceBuilderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceBuilderViewController.swift; sourceTree = "<group>"; };
 		0F297EF8E6500EB515EA23B3 /* Pods-CalendarTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalendarTest/Pods-CalendarTest.debug.xcconfig"; sourceTree = "<group>"; };
+		0F51C2A021EE38530035FACC /* DairyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DairyTableViewCell.swift; sourceTree = "<group>"; };
+		0F51C2A121EE38530035FACC /* DairyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DairyTableViewCell.xib; sourceTree = "<group>"; };
 		1AD801A096DEDF395325FAAA /* Pods-CalendarTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalendarTest/Pods-CalendarTest.release.xcconfig"; sourceTree = "<group>"; };
 		C1008AE7C59BB4867EEDC1B4 /* Pods_CalendarTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -85,6 +89,7 @@
 		0F202BFE21ECA9C300D7B07B = {
 			isa = PBXGroup;
 			children = (
+				0F51C2A421EE38600035FACC /* UI */,
 				0F202C0921ECA9C300D7B07B /* CalendarTest */,
 				0F202C1E21ECA9C600D7B07B /* CalendarTestTests */,
 				0F202C2921ECA9C600D7B07B /* CalendarTestUITests */,
@@ -135,6 +140,15 @@
 				0F202C2C21ECA9C600D7B07B /* Info.plist */,
 			);
 			path = CalendarTestUITests;
+			sourceTree = "<group>";
+		};
+		0F51C2A421EE38600035FACC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0F51C2A021EE38530035FACC /* DairyTableViewCell.swift */,
+				0F51C2A121EE38530035FACC /* DairyTableViewCell.xib */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		943C27D3A7C5A573F09971F1 /* Pods */ = {
@@ -264,6 +278,7 @@
 				0F202C1521ECA9C600D7B07B /* LaunchScreen.storyboard in Resources */,
 				0F202C1221ECA9C600D7B07B /* Assets.xcassets in Resources */,
 				0F202C1021ECA9C300D7B07B /* Main.storyboard in Resources */,
+				0F51C2A321EE38530035FACC /* DairyTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +353,7 @@
 				0F202C3C21ECB93900D7B07B /* InterfaceBuilderViewController.swift in Sources */,
 				0F202C0D21ECA9C300D7B07B /* ViewController.swift in Sources */,
 				0F202C0B21ECA9C300D7B07B /* AppDelegate.swift in Sources */,
+				0F51C2A221EE38530035FACC /* DairyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
