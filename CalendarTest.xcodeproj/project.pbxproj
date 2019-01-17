@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		075AA5D0A50B63F2EE54DAD3 /* Pods_CalendarTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1008AE7C59BB4867EEDC1B4 /* Pods_CalendarTest.framework */; };
 		0F202C0B21ECA9C300D7B07B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F202C0A21ECA9C300D7B07B /* AppDelegate.swift */; };
-		0F202C0D21ECA9C300D7B07B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F202C0C21ECA9C300D7B07B /* ViewController.swift */; };
 		0F202C1021ECA9C300D7B07B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F202C0E21ECA9C300D7B07B /* Main.storyboard */; };
-		0F202C1221ECA9C600D7B07B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F202C1121ECA9C600D7B07B /* Assets.xcassets */; };
 		0F202C1521ECA9C600D7B07B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F202C1321ECA9C600D7B07B /* LaunchScreen.storyboard */; };
 		0F202C2021ECA9C600D7B07B /* CalendarTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F202C1F21ECA9C600D7B07B /* CalendarTestTests.swift */; };
 		0F202C2B21ECA9C600D7B07B /* CalendarTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F202C2A21ECA9C600D7B07B /* CalendarTestUITests.swift */; };
 		0F202C3C21ECB93900D7B07B /* InterfaceBuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F202C3B21ECB93900D7B07B /* InterfaceBuilderViewController.swift */; };
-		0F51C2A221EE38530035FACC /* DairyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F51C2A021EE38530035FACC /* DairyTableViewCell.swift */; };
-		0F51C2A321EE38530035FACC /* DairyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F51C2A121EE38530035FACC /* DairyTableViewCell.xib */; };
+		0F51C2A621EF39D70035FACC /* DairyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F51C2A521EF39D70035FACC /* DairyDetailViewController.swift */; };
+		0F51C2A821EF5EAE0035FACC /* DairyDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F51C2A721EF5EAE0035FACC /* DairyDataModel.swift */; };
+		0F51C2AA21EF75DC0035FACC /* DairyListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F51C2A921EF75DC0035FACC /* DairyListItem.swift */; };
+		0FAB586521F073B600C7E791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FAB586421F073B600C7E791 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +40,7 @@
 /* Begin PBXFileReference section */
 		0F202C0721ECA9C300D7B07B /* CalendarTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F202C0A21ECA9C300D7B07B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0F202C0C21ECA9C300D7B07B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0F202C0F21ECA9C300D7B07B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0F202C1121ECA9C600D7B07B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F202C1421ECA9C600D7B07B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F202C1621ECA9C600D7B07B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F202C1B21ECA9C600D7B07B /* CalendarTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,8 +52,10 @@
 		0F202C3821ECAA9B00D7B07B /* CalendarTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CalendarTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		0F202C3B21ECB93900D7B07B /* InterfaceBuilderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceBuilderViewController.swift; sourceTree = "<group>"; };
 		0F297EF8E6500EB515EA23B3 /* Pods-CalendarTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalendarTest/Pods-CalendarTest.debug.xcconfig"; sourceTree = "<group>"; };
-		0F51C2A021EE38530035FACC /* DairyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DairyTableViewCell.swift; sourceTree = "<group>"; };
-		0F51C2A121EE38530035FACC /* DairyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DairyTableViewCell.xib; sourceTree = "<group>"; };
+		0F51C2A521EF39D70035FACC /* DairyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DairyDetailViewController.swift; sourceTree = "<group>"; };
+		0F51C2A721EF5EAE0035FACC /* DairyDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DairyDataModel.swift; sourceTree = "<group>"; };
+		0F51C2A921EF75DC0035FACC /* DairyListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DairyListItem.swift; sourceTree = "<group>"; };
+		0FAB586421F073B600C7E791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AD801A096DEDF395325FAAA /* Pods-CalendarTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalendarTest/Pods-CalendarTest.release.xcconfig"; sourceTree = "<group>"; };
 		C1008AE7C59BB4867EEDC1B4 /* Pods_CalendarTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,7 +89,6 @@
 		0F202BFE21ECA9C300D7B07B = {
 			isa = PBXGroup;
 			children = (
-				0F51C2A421EE38600035FACC /* UI */,
 				0F202C0921ECA9C300D7B07B /* CalendarTest */,
 				0F202C1E21ECA9C600D7B07B /* CalendarTestTests */,
 				0F202C2921ECA9C600D7B07B /* CalendarTestUITests */,
@@ -112,12 +111,12 @@
 		0F202C0921ECA9C300D7B07B /* CalendarTest */ = {
 			isa = PBXGroup;
 			children = (
+				0FAB586221F0728500C7E791 /* View Controller */,
+				0FAB586121F0725D00C7E791 /* Data Model */,
 				0F202C0A21ECA9C300D7B07B /* AppDelegate.swift */,
-				0F202C0C21ECA9C300D7B07B /* ViewController.swift */,
-				0F202C3B21ECB93900D7B07B /* InterfaceBuilderViewController.swift */,
-				0F202C0E21ECA9C300D7B07B /* Main.storyboard */,
-				0F202C1121ECA9C600D7B07B /* Assets.xcassets */,
 				0F202C1321ECA9C600D7B07B /* LaunchScreen.storyboard */,
+				0FAB586421F073B600C7E791 /* Assets.xcassets */,
+				0F202C0E21ECA9C300D7B07B /* Main.storyboard */,
 				0F202C1621ECA9C600D7B07B /* Info.plist */,
 				0F202C3821ECAA9B00D7B07B /* CalendarTest-Bridging-Header.h */,
 			);
@@ -142,13 +141,22 @@
 			path = CalendarTestUITests;
 			sourceTree = "<group>";
 		};
-		0F51C2A421EE38600035FACC /* UI */ = {
+		0FAB586121F0725D00C7E791 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				0F51C2A021EE38530035FACC /* DairyTableViewCell.swift */,
-				0F51C2A121EE38530035FACC /* DairyTableViewCell.xib */,
+				0F51C2A921EF75DC0035FACC /* DairyListItem.swift */,
+				0F51C2A721EF5EAE0035FACC /* DairyDataModel.swift */,
 			);
-			path = UI;
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		0FAB586221F0728500C7E791 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0F202C3B21ECB93900D7B07B /* InterfaceBuilderViewController.swift */,
+				0F51C2A521EF39D70035FACC /* DairyDetailViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 		943C27D3A7C5A573F09971F1 /* Pods */ = {
@@ -276,9 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F202C1521ECA9C600D7B07B /* LaunchScreen.storyboard in Resources */,
-				0F202C1221ECA9C600D7B07B /* Assets.xcassets in Resources */,
+				0FAB586521F073B600C7E791 /* Assets.xcassets in Resources */,
 				0F202C1021ECA9C300D7B07B /* Main.storyboard in Resources */,
-				0F51C2A321EE38530035FACC /* DairyTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,9 +360,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F202C3C21ECB93900D7B07B /* InterfaceBuilderViewController.swift in Sources */,
-				0F202C0D21ECA9C300D7B07B /* ViewController.swift in Sources */,
+				0F51C2A621EF39D70035FACC /* DairyDetailViewController.swift in Sources */,
 				0F202C0B21ECA9C300D7B07B /* AppDelegate.swift in Sources */,
-				0F51C2A221EE38530035FACC /* DairyTableViewCell.swift in Sources */,
+				0F51C2A821EF5EAE0035FACC /* DairyDataModel.swift in Sources */,
+				0F51C2AA21EF75DC0035FACC /* DairyListItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
